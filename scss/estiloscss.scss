@@ -10,16 +10,34 @@ $margenAbajo : 10px;
 $padding : 8px;
 $colorGris : #272727;
 
-@media only screen and (max-width:600px){
-    
+@media (max-width:400px){
+    .bienv {
+        font-size: 2.2rem;
+    }
+
+    .localidades__descripcion{
+        width: 90%;
+    }
 }
 
-@media only screen and (min-width:600px){
-    
-}
+@media (min-width:400.01px) and (max-width:767.99px){
+    .bienv {
+        font-size: 2.5rem;
+    }
 
-@media only screen and (min-width:768px){
-   
+    .localidades__descripcion{
+        width: 70%;
+    }
+}
+@media (min-width:768px){
+    .bienv {
+        font-size: 3rem;
+    }
+
+    .localidades__descripcion{
+        width: 50%;
+    }
+    
 }
 
 body {
@@ -212,20 +230,27 @@ select{
     display: flex;
     background-color: #0367A6;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: 83vh;
+    height:1030px;
     margin-bottom: 0px;
+
+    .contenedorMapa{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .mapa {
+            justify-content: center;
+            width: 90%;
+            height: 400px;
+        }
+    }
+    
 }
 
 .localidades__descripcion {
-    display: block;
-    position: relative;
-    top: 15vh;
-    height: 100%;
-    width: 50%;
     text-align: center;
     font-weight: 600;
     margin-right: 40px;
@@ -286,7 +311,7 @@ h2 {
     font-family: 'Prata', serif;
     padding-top: 10px;
     padding-bottom: 20px;
-    font-size: 3rem;
+    
     letter-spacing: 6px;
     color: rgb(68, 68, 68);
     color: #fff
@@ -401,11 +426,11 @@ h2 {
     margin-bottom: 15%;
 }
 
-:root {
-    --facebook:#3b5999;
-    --instagram:#e4405f;
-    --twitter:#55acee;
-}
+
+/*-----------------F  O  O  T  E  R-----------------*/
+$colorFacebook:#3b5999;
+$colorInstagram:#e4405f;
+$colorTwitter:#55acee;
 
 .redes-container{
     display: flex;
@@ -444,15 +469,15 @@ h2 {
 }
 
 .redes-container ul li .facebook:hover{
-    background-color: var(--facebook);
+    background-color: $colorFacebook;
 }
 
 .redes-container ul li .instagram:hover{
-    background-color: var(--instagram);
+    background-color: $colorInstagram;
 }
 
 .redes-container ul li .twitter:hover{
-    background-color: var(--twitter);
+    background-color: $colorTwitter;
 }
 
 .contacto-img {
