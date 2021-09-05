@@ -18,6 +18,27 @@ $colorGris : #272727;
     .localidades__descripcion{
         width: 90%;
     }
+
+    form {
+        width: 90%;
+    }
+
+    textarea {
+        max-width: 91%;
+        min-width: 91%;
+        max-height: 200px;
+        min-height: 100px;
+        
+    }
+
+    .contenedorAbout {
+        grid-template-columns: 2fr 0fr 0fr;
+        width: 88%;
+    }
+
+    .contenedorAbout__itemUno {
+        padding-right: 10px;
+    }
 }
 
 @media (min-width:400.01px) and (max-width:767.99px){
@@ -28,6 +49,27 @@ $colorGris : #272727;
     .localidades__descripcion{
         width: 70%;
     }
+
+    form {
+        width: 90%;
+    }
+
+    textarea {
+        max-width: 95%;
+        min-width: 95%;
+        max-height: 200px;
+        min-height: 100px;
+        
+    }
+
+    .contenedorAbout {
+        grid-template-columns: 2fr 0fr 0fr;
+        width: 88%;
+    }
+
+    .contenedorAbout__itemUno {
+        padding-right: 10px;
+    }
 }
 @media (min-width:768px){
     .bienv {
@@ -37,7 +79,28 @@ $colorGris : #272727;
     .localidades__descripcion{
         width: 50%;
     }
-    
+
+    form {
+        width: 460px;
+    }
+
+    textarea {
+        max-width: 363px;
+        min-width: 363px;
+        max-height: 200px;
+        min-height: 100px;
+        
+    }
+
+    .contenedorAbout {
+        grid-template-columns: 2fr 2fr 2fr;
+        width: 95%;
+    }
+
+    .contenedorAbout__separacion {
+        margin-bottom: 2vw;
+    }
+
 }
 
 body {
@@ -126,7 +189,6 @@ a {
 
 form {
     height: 100%;
-    width: 460px;
     margin: auto;
     background: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
@@ -159,10 +221,6 @@ input {
 /* --------------------EXTEND------------------------ */
 textarea {
     @extend button;
-    max-width: 363px;
-    min-width: 363px;
-    max-height: 200px;
-    min-height: 100px;
     
 }
 
@@ -381,9 +439,7 @@ h2 {
 .contenedorAbout {
     display: grid;
     grid-template-rows: 300px;
-    grid-template-columns: 2fr 2fr 2fr;
     height: 800px;
-    width: 100%;
     padding-top: 10px;
     margin: 3%;
     
@@ -402,12 +458,9 @@ h2 {
 
 .contenedorAbout__imgUno {
     
-    width: 100%;
-    max-height: 580px;
-    margin-right: 15%;
-    padding: 0;
+    max-height: 100%;
     margin-left: 2px;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .contenedorAbout__imgDos {
@@ -420,11 +473,13 @@ h2 {
 
 .contenedorAbout__separacionImgUno {
     margin-left: 10%;
+    margin-right: 10%;
+    height: 500px;
+    width: 83%;
+    padding: 0;
 }
 
-.contenedorAbout__separacion {
-    margin-bottom: 15%;
-}
+
 
 
 /*-----------------F  O  O  T  E  R-----------------*/
